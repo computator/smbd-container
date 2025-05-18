@@ -7,5 +7,6 @@ COPY entrypoint.sh /
 COPY smb.conf default-share.conf /etc/samba/
 
 WORKDIR /srv
+VOLUME /var/lib/samba
 ENTRYPOINT ["/entrypoint.sh"]
 EXPOSE 445
